@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="527.0" prefWidth="359.0" spacing="10.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <StackPane prefHeight="96.0" prefWidth="359.0">
+         <children>
+            <Label fx:id="result" prefHeight="54.0" prefWidth="225.0">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </StackPane>
+      <HBox prefHeight="60.0" prefWidth="359.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#processNumbers" prefHeight="48.0" prefWidth="62.0" text="7" textAlignment="CENTER">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processNumbers" prefHeight="48.0" prefWidth="62.0" text="8">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processNumbers" prefHeight="48.0" prefWidth="62.0" text="9">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="48.0" prefWidth="62.0" text="DEL">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="48.0" prefWidth="62.0" text="AC">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Button>
+         </children>
+         <opaqueInsets>
+            <Insets bottom="10.0" />
+         </opaqueInsets>
+      </HBox>
+       <HBox prefHeight="60.0" prefWidth="359.0">
+           <children>
+               <Button mnemonicParsing="false" onAction="#processNumbers" prefHeight="48.0" prefWidth="62.0" text="4" textAlignment="CENTER">
+                   <HBox.margin>
+                       <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                   </HBox.margin>
+                   <font>
+                       <Font name="System Bold Italic" size="14.0" />
+                   </font>
+               </Button>
+               <Button mnemonicParsing="false" onAction="#processNumbers" prefHeight="48.0" prefWidth="62.0" text="5">
+                   <HBox.margin>
+                       <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                   </HBox.margin>
+                   <font>
+                       <Font name="System Bold Italic" size="14.0" />
+                   </font>
+               </Button>
+               <Button mnemonicParsing="false" onAction="#processNumbers" prefHeight="48.0" prefWidth="62.0" text="6">
+                   <HBox.margin>
+                       <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                   </HBox.margin>
+                   <font>
+                       <Font name="System Bold Italic" size="14.0" />
+                   </font>
+               </Button>
+               <Button mnemonicParsing="false" onAction="#processOperators" prefHeight="48.0" prefWidth="62.0" text="x">
+                   <HBox.margin>
+                       <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                   </HBox.margin>
+                   <font>
+                       <Font name="System Bold Italic" size="14.0" />
+                   </font>
+               </Button>
+               <Button mnemonicParsing="false" onAction="#processOperators" prefHeight="48.0" prefWidth="62.0" text="÷">
+                   <HBox.margin>
+                       <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                   </HBox.margin>
+                   <font>
+                       <Font name="System Bold Italic" size="14.0" />
+                   </font>
+               </Button>
+           </children>
+       </HBox>
+       <HBox prefHeight="60.0" prefWidth="359.0">
+           <children>
+               <Button mnemonicParsing="false" onAction="#processNumbers" prefHeight="48.0" prefWidth="62.0" text="1" textAlignment="CENTER">
+                   <HBox.margin>
+                       <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                   </HBox.margin>
+                   <font>
+                       <Font name="System Bold Italic" size="14.0" />
+                   </font>
+               </Button>
+               <Button mnemonicParsing="false" onAction="#processNumbers" prefHeight="48.0" prefWidth="62.0" text="2">
+                   <HBox.margin>
+                       <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                   </HBox.margin>
+                   <font>
+                       <Font name="System Bold Italic" size="14.0" />
+                   </font>
+               </Button>
+               <Button mnemonicParsing="false" onAction="#processNumbers" prefHeight="48.0" prefWidth="62.0" text="3">
+                   <HBox.margin>
+                       <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                   </HBox.margin>
+                   <font>
+                       <Font name="System Bold Italic" size="14.0" />
+                   </font>
+               </Button>
+               <Button mnemonicParsing="false" onAction="#processOperators" prefHeight="48.0" prefWidth="62.0" text="+">
+                   <HBox.margin>
+                       <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                   </HBox.margin>
+                   <font>
+                       <Font name="System Bold Italic" size="14.0" />
+                   </font>
+               </Button>
+               <Button mnemonicParsing="false" onAction="#processOperators" prefHeight="48.0" prefWidth="62.0" text="-">
+                   <HBox.margin>
+                       <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                   </HBox.margin>
+                   <font>
+                       <Font name="System Bold Italic" size="14.0" />
+                   </font>
+               </Button>
+           </children>
+       </HBox>
+       <HBox prefHeight="60.0" prefWidth="359.0">
+           <children>
+               <Button mnemonicParsing="false" onAction="#processNumbers" prefHeight="48.0" prefWidth="62.0" text="0" textAlignment="CENTER">
+                   <HBox.margin>
+                       <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                   </HBox.margin>
+                   <font>
+                       <Font name="System Bold Italic" size="14.0" />
+                   </font>
+               </Button>
+               <Button mnemonicParsing="false" onAction="#processNumbers" prefHeight="48.0" prefWidth="62.0" text=".">
+                   <HBox.margin>
+                       <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                   </HBox.margin>
+                   <font>
+                       <Font name="System Bold Italic" size="14.0" />
+                   </font>
+               </Button>
+               <Button mnemonicParsing="false" onAction="#processNumbers" prefHeight="48.0" prefWidth="62.0" text="x10">
+                   <HBox.margin>
+                       <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                   </HBox.margin>
+                   <font>
+                       <Font name="System Bold Italic" size="14.0" />
+                   </font>
+               </Button>
+               <Button mnemonicParsing="false" prefHeight="48.0" prefWidth="62.0" text="ANS">
+                   <HBox.margin>
+                       <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                   </HBox.margin>
+                   <font>
+                       <Font name="System Bold Italic" size="14.0" />
+                   </font>
+               </Button>
+               <Button mnemonicParsing="false" onAction="#processOperators" prefHeight="48.0" prefWidth="62.0" text="=">
+                   <HBox.margin>
+                       <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                   </HBox.margin>
+                   <font>
+                       <Font name="System Bold Italic" size="14.0" />
+                   </font>
+               </Button>
+           </children>
+       </HBox>
+       <HBox prefHeight="60.0" prefWidth="359.0">
+           <children>
+               <Button mnemonicParsing="false" prefHeight="48.0" prefWidth="62.0" text="(" textAlignment="CENTER">
+                   <HBox.margin>
+                       <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                   </HBox.margin>
+                   <font>
+                       <Font name="System Bold Italic" size="14.0" />
+                   </font>
+               </Button>
+               <Button mnemonicParsing="false" prefHeight="48.0" prefWidth="62.0" text=")">
+                   <HBox.margin>
+                       <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                   </HBox.margin>
+                   <font>
+                       <Font name="System Bold Italic" size="14.0" />
+                   </font>
+               </Button>
+               <Button mnemonicParsing="false" onAction="#processOperators" prefHeight="48.0" prefWidth="62.0" text="ln">
+                   <HBox.margin>
+                       <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                   </HBox.margin>
+                   <font>
+                       <Font name="System Bold Italic" size="14.0" />
+                   </font>
+               </Button>
+               <Button mnemonicParsing="false" onAction="#processOperators" prefHeight="48.0" prefWidth="62.0" text="log">
+                   <HBox.margin>
+                       <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                   </HBox.margin>
+                   <font>
+                       <Font name="System Bold Italic" size="14.0" />
+                   </font>
+               </Button>
+               <Button mnemonicParsing="false" prefHeight="48.0" prefWidth="62.0" text="STO">
+                   <HBox.margin>
+                       <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                   </HBox.margin>
+                   <font>
+                       <Font name="System Bold Italic" size="14.0" />
+                   </font>
+               </Button>
+           </children>
+       </HBox>
+       <HBox prefHeight="60.0" prefWidth="359.0">
+           <children>
+               <Button mnemonicParsing="false" onAction="#processNumbers" prefHeight="48.0" prefWidth="62.0" text="SIN" textAlignment="CENTER">
+                   <HBox.margin>
+                       <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                   </HBox.margin>
+                   <font>
+                       <Font name="System Bold Italic" size="14.0" />
+                   </font>
+               </Button>
+               <Button mnemonicParsing="false" onAction="#processOperators" prefHeight="48.0" prefWidth="62.0" text="COS">
+                   <HBox.margin>
+                       <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                   </HBox.margin>
+                   <font>
+                       <Font name="System Bold Italic" size="14.0" />
+                   </font>
+               </Button>
+               <Button mnemonicParsing="false" onAction="#processOperators" prefHeight="48.0" prefWidth="62.0" text="TAN">
+                   <HBox.margin>
+                       <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                   </HBox.margin>
+                   <font>
+                       <Font name="System Bold Italic" size="14.0" />
+                   </font>
+               </Button>
+               <Button fx:id="pi" mnemonicParsing="false" onAction="#processNumbers" prefHeight="48.0" prefWidth="62.0" text="π">
+                   <HBox.margin>
+                       <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                   </HBox.margin>
+                   <font>
+                       <Font name="System Bold Italic" size="14.0" />
+                   </font>
+               </Button>
+               <Button fx:id="e" mnemonicParsing="false" onAction="#processNumbers" prefHeight="48.0" prefWidth="62.0" text="e">
+                   <HBox.margin>
+                       <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                   </HBox.margin>
+                   <font>
+                       <Font name="System Bold Italic" size="14.0" />
+                   </font>
+               </Button>
+           </children>
+       </HBox>
+   </children>
+</VBox>
